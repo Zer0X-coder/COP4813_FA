@@ -1,17 +1,109 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title> My First Page </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Hello, World!</h1>
-    </body>
-    <main>This is a COP44813 assignment to have a proper website shown.</main>
-<nav>
-    <a href="about.html">About</a>
-    <a href="home.html">Home</a>
-</nav>
-<footer> Created by Zer0X, 2026 </footer>
+
+        <title> Menu Example</title>
+        <link rel="stylesheet" href="cop4813_FA/style.css">
+        <script>
+            var timeout = 1000;
+            var closetimer = 0;
+            var ddmenuitem = 0;
+
+            // open hidden 
+            function mopen(id)
+            {
+                // cancel
+                mcancelclosetime();
+                
+                // close
+                if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+                
+                // Get new layer
+                ddmenuitem = document.getElementById(id);
+                ddmenuitem.style.visibility = 'visible'
+                
+            }
+            // close layer
+            function mclose()
+            {
+                if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+            }
+
+            // go close timer
+            function mclosetime()
+            {
+                closetimer = window.setTimeout(mclose, timeout);
+            }
+            
+            // cancle close timer
+            function mcancelclosetime()
+            {
+                if(closetimer)
+                {
+                window.clearTimeout(closetimer);
+                closetimer = null;
+
+                }
+            }
+
+        // close layer when click-out
+        document.onclick = mclose;
+        </script>
+
+        </head>
+
+        <body>
+            This is the Home page for the course
+            please select which section you need to check.
+            (There will be updates implemented in the future) <br/><br/>
+            <ul id="sddm">
+                <li><a href='#'
+                onmouseover="mopen('m1')"
+                onmouseout="mclosetime() ">My Classes</a>
+                <div id="m1"
+                    onmouseover="mcancelclosetime()"
+                    onmouseout="mclosetime()" >
+                    <a href="index.html">Class 1</a>
+                    <a href="home.html">Class 2</a>
+                    <a href="#">Class 3</a>
+                </div>
+            </li>
+            <li> <a href='#'
+                onmouseover="mopen('m2')"
+                onmouseout="mclosetime() ">My Assignments</a>
+                <div id="m2"
+                    onmouseover="mcancelclosetime()"
+                    onmouseout="mclosetime()" >
+                    <a href="index.html">Assignment 1</a>
+                    <a href="home.html">Assignment 2</a>
+                    <a href="#">Assignment 3</a></li>
+            </div>
+
+            <li> <a href='#'
+                onmouseover="mopen('m3')"
+                onmouseout="mclosetime() ">My Favorite</a>
+                <div id="m3"
+                    onmouseover="mcancelclosetime()"
+                    onmouseout="mclosetime()" >
+                    <a href="#">none</a>
+                    <a href="#">none</a>
+                    <a href="#">none</a></li>
+            </div>
+
+            <li> <a href='#'
+                onmouseover="mopen('m4')"
+                onmouseout="mclosetime() ">Programming Sites</a>
+                <div id="m4"
+                    onmouseover="mcancelclosetime()"
+                    onmouseout="mclosetime()" >
+                    <a href="#">none</a>
+                    <a href="#">none</a>
+                    <a href="#">none</a></li>
+            </div>
+
+
+            </ul>
+        </body>
+
+<footer>Created by Zer0X</footer>
 </html>
