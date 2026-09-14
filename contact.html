@@ -1,262 +1,405 @@
-<html>
+<!DOCTYPE html>
 
-        <head>
-<title> Zer0X | Contact</title>
-        <link rel="stylesheet" href="css/style.css">
-        </head>
+<html lang="en">
 
-        <body>
+<head> <meta charset="UTF-8">
 
-        <header>
-            <h1>Zer0X </h1>
-                <p>Web Development portfolio</p>
-                <p>COP4813 * Web System I</p>
-        </header>
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
- <nav>
-            <div class="nav-container">
-            <a href="index.html">Home</a>
-             <a href="about.html">About</a>
-              <a href="assignments.html">Assignments</a>
-              <a href="classes.html">Classes</a>
-               <a href="resources.html">Resources</a>
-             <a href="contact.html">Contact</a>
-        </div>
+<title>Zer0X | Contact</title>
 
-        </nav>
+<link rel="stylesheet" href="css/style.css">
 
-        <main>
-            
-            <section class="form-section">
+</head>
 
-                <h2>Contact Zer0X</h2>
+<body>
 
-                <p>
-                    Complete the form below. All fields are required.
-                </p>
+<!-- HEADER -->
 
-                <form id="contact-form" novalidate>
-
-                    <!--Name-->
-                    <div class="form-group">
-                        <label for="firstname">First Name</label>
-
-                        <input
-                        type="text"
-                        id="firstname"
-                        name="firstname"
-                        required
-                        >
-
-                        <span class="error" id="firstname-error"></span>
-                    </div>
+<header>
+    <h1>Zer0X</h1>
+    <p>Web Development Portfolio</p>
+    <p>COP4813 * Web Systems I</p>
+</header>
 
 
-                      <div class="form-group">
-                        <label for="lastname">Last Name</label>
+<!-- NAVIGATION -->
 
-                        <input
-                        type="text"
-                        id="lastname"
-                        name="lastname"
-                        required
-                        >
+<nav>
+    <div class="nav-container">
 
-                        <span class="error" id="lastname-error"></span>
-                    </div>
+        <a href="index.html">Home</a>
 
+        <a href="about.html">About</a>
 
-                      <div class="form-group">
-                        <label for="address">Street Address</label>
+        <a href="assignments.html">Assignments</a>
 
-                        <input
-                        type="text"
-                        id="address"
-                        name="address"
-                        required
-                        >
+        <a href="classes.html">Classes</a>
 
-                        <span class="error" id="address-error"></span>
-                    
-                    </div>
+        <a href="resources.html">Resources</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+</nav>
 
 
-                      <div class="form-row">
+<!-- MAIN CONTENT -->
 
-                        <div class="form-group">
+<main>
 
-                        <label for="city">City</label>
+    <section class="form-section">
 
-                        <input
+        <h2>Contact Zer0X</h2>
+
+        <p>
+            Complete the form below. All fields are required.
+        </p>
+
+
+        <!-- CONTACT FORM -->
+
+        <form id="contact-form" novalidate>
+
+
+            <!-- FIRST NAME -->
+
+            <div class="form-group">
+
+                <label for="firstname">
+                    First Name
+                </label>
+
+                <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    autocomplete="given-name"
+                    required
+                >
+
+                <span
+                    class="error"
+                    id="firstname-error">
+                </span>
+
+            </div>
+
+
+            <!-- LAST NAME -->
+
+            <div class="form-group">
+
+                <label for="lastname">
+                    Last Name
+                </label>
+
+                <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    autocomplete="family-name"
+                    required
+                >
+
+                <span
+                    class="error"
+                    id="lastname-error">
+                </span>
+
+            </div>
+
+
+            <!-- STREET ADDRESS -->
+
+            <div class="form-group">
+
+                <label for="address">
+                    Street Address
+                </label>
+
+                <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    autocomplete="street-address"
+                    required
+                >
+
+                <span
+                    class="error"
+                    id="address-error">
+                </span>
+
+            </div>
+
+
+            <!-- CITY, STATE, ZIP -->
+
+            <div class="form-row">
+
+
+                <!-- CITY -->
+
+                <div class="form-group">
+
+                    <label for="city">
+                        City
+                    </label>
+
+                    <input
                         type="text"
                         id="city"
                         name="city"
+                        autocomplete="address-level2"
                         required
-                        >
+                    >
 
-                        <span class="error" id="city-error"></span>
-                    </div>
-                    
+                    <span
+                        class="error"
+                        id="city-error">
+                    </span>
 
-                      <div class="form-group">
-                        <label for="state">State</label>
-
-                       <select id="state" name="state" required>
-                        <option value="">Select State</option>
-                        <option value="FL">Florida</option>
-                        <option value="GA">Gerogia</option>
-                        <option value="NY">New York</option>
-                        <option value="NC">North Carolina</option>
-                        <option value="SC">South Carolina</option>
-
-                       </select>
-
-                        <span class="error" id="state-error"></span>
-                    </div>
+                </div>
 
 
-                       <div class="form-group">
+                <!-- STATE -->
 
-                        <label for="zip">Zip</label>
+                <div class="form-group">
 
-                        <input
+                    <label for="state">
+                        State
+                    </label>
+
+                    <select
+                        id="state"
+                        name="state"
+                        autocomplete="address-level1"
+                        required
+                    >
+
+                        <option value="">
+                            Select State
+                        </option>
+
+                        <option value="FL">
+                            Florida
+                        </option>
+
+                        <option value="GA">
+                            Georgia
+                        </option>
+
+                        <option value="NY">
+                            New York
+                        </option>
+
+                        <option value="NC">
+                            North Carolina
+                        </option>
+
+                        <option value="SC">
+                            South Carolina
+                        </option>
+
+                    </select>
+
+                    <span
+                        class="error"
+                        id="state-error">
+                    </span>
+
+                </div>
+
+
+                <!-- ZIP CODE -->
+
+                <div class="form-group">
+
+                    <label for="zip">
+                        ZIP Code
+                    </label>
+
+                    <input
                         type="text"
                         id="zip"
                         name="zip"
+                        maxlength="10"
+                        autocomplete="postal-code"
                         required
-                        >
+                    >
 
-                        <span class="error" id="zip-error"></span>
-                    </div>
+                    <span
+                        class="error"
+                        id="zip-error">
+                    </span>
 
-                      </div>
+                </div>
 
-
-                <!--Phone-->
-
-                   <div class="form-group">
-
-                        <label for="phone">Phone Number</label>
-
-                        <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="(000)000-0000"
-                        maxlength="13"
-                        required
-                        >
-
-                        <span class="error" id="phone-error"></span>
+            </div>
 
 
-                    </div>
+            <!-- PHONE NUMBER -->
 
-                    <!--EMAIL-->
+            <div class="form-group">
 
-                       <div class="form-group">
+                <label for="phone">
+                    Phone Number
+                </label>
 
-                        <label for="email">Email Address</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(000)000-0000"
+                    maxlength="13"
+                    autocomplete="tel"
+                    required
+                >
 
-                        <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        >
+                <span
+                    class="error"
+                    id="phone-error">
+                </span>
 
-                        <span class="error" id="email-error"></span>
-                    
-                    </div>
-
-                    <!--Birth Date-->
-
-                       <div class="form-group">
-
-                        <label for="birthdate">Birth Date</label>
-
-                        <input
-                        type="date"
-                        id="birthdate"
-                        name="birthdate"
-                        required
-                        >
-
-                        <span class="error" id="birthdate-error"></span>
-                    </div>
+            </div>
 
 
-                    <!--Message-->
+            <!-- EMAIL -->
 
-                       <div class="form-group">
+            <div class="form-group">
 
-                        <label for="message">Message</label>
+                <label for="email">
+                    Email Address
+                </label>
 
-                        <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required
-                        ></textarea>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    required
+                >
 
-                        <span class="error" id="message-error"></span>
-                    
-                    </div>
+                <span
+                    class="error"
+                    id="email-error">
+                </span>
 
-                    <!--Security Question-->
-
-                       <div class="form-group">
-
-                        <label for="conform">
-                            Security Check: What is 4 + 3?
-                        </label>
-
-                        <input
-                        type="number"
-                        id="conform"
-                        name="conform"
-                        required
-                        >
-
-                        <span class="error" id="conform-error"></span>
+            </div>
 
 
-                    </div>
+            <!-- BIRTH DATE -->
 
-                        <form id="contact-form" novalidate>
-                    <button type="submit" class="form-button">
-                        Review Information
-                    </button>
+            <div class="form-group">
 
-                </form>
+                <label for="birthdate">
+                    Birth Date
+                </label>
 
+                <input
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    autocomplete="bday"
+                    required
+                >
 
-            </section>
+                <span
+                    class="error"
+                    id="birthdate-error">
+                </span>
 
-
-        </main>
-
-
-         <footer>
-            <p> &copy; 2026 Zer0X</p>
-            <p>Built with HTML, CSS, & Javascript</p>
-        </footer>
-
-        <script scr="js/form.js"></script>
-
-
-
-        </body>
+            </div>
 
 
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <span
+                    class="error"
+                    id="message-error">
+                </span>
+
+            </div>
 
 
+            <!-- SECURITY QUESTION -->
+
+            <div class="form-group">
+
+                <label for="confirm">
+                    Security Check: What is 4 + 3?
+                </label>
+
+                <input
+                    type="number"
+                    id="confirm"
+                    name="confirm"
+                    autocomplete="off"
+                    required
+                >
+
+                <span
+                    class="error"
+                    id="confirm-error">
+                </span>
+
+            </div>
 
 
+            <!-- REVIEW BUTTON -->
+
+            <button
+                type="submit"
+                class="form-button"
+            >
+                Review Information
+            </button>
 
 
+        </form>
+
+    </section>
+
+</main>
 
 
+<!-- FOOTER -->
 
+<footer>
+
+    <p>
+        &copy; 2026 Zer0X
+    </p>
+
+    <p>
+        Built with HTML, CSS, &amp; JavaScript
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/form.js"></script>
+
+</body>
 
 </html>
