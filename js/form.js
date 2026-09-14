@@ -361,7 +361,7 @@ form.addEventListener("submit", function (event) {
 
         // Go to the confirmation page
         window.location.href =
-            "Confirmation.html";
+            "confirmation.html";
 
     }
 
