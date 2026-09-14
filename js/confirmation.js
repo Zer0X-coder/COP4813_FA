@@ -9,14 +9,13 @@ const storedData =
     sessionStorage.getItem("formData");
 
 
-    /*
 if (!storedData) {
 
     window.location.href = "contact.html";
 
-}
+} else {
 
-*/
+
 
 const data =
     JSON.parse(storedData);
@@ -53,6 +52,9 @@ document.getElementById("confirm-birthdate")
 document.getElementById("confirm-message")
     .textContent =
     data.message;
+
+
+}
 
 
     document
