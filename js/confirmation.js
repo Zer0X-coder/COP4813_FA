@@ -104,7 +104,7 @@ document.getElementById("confirm-message")
         );
 
         window.location.href =
-        "malito:xavier_warner@daytonastate.edu" +
+        "malito:##" +
         "?subject" +
         "&body=" +
         body;
