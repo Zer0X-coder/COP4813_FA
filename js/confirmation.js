@@ -8,6 +8,8 @@ console.log(
 const storedData =
     sessionStorage.getItem("formData");
 
+console.log("Read formData:", storeData);
+
 
 if (!storedData) {
 
