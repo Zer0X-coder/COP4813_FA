@@ -1,0 +1,256 @@
+<html>
+
+<title> Zer0X | Contact</title>
+        <link rel="stylesheet" href="css/style.css">
+        </head>
+
+        <header>
+            <h1>Zer0X </h1>
+                <p>Web Development portfolio</p>
+                <p>COP4813 * Web System I</p>
+        </header>
+
+        <nav>
+         <div class="nav-container">
+            <a href="Index.html">Home</a>
+             <a href="About.html">About</a>
+              <a href="Assignments.html">Assignments</a>
+              <a href="Classes.html">Classes</a>
+               <a href="Resources.html">Resources</a>
+               <a href="Contact.html">Contact</a>
+        </div>
+
+        </nav>
+
+        <main>
+            
+            <section class="form-section">
+
+                <h2>Contact Zer0X</h2>
+
+                <p>
+                    Complete the form below. All fields are required.
+                </p>
+
+                <form id="contact-form" novalidate>
+
+                    <!--Name-->
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+
+                        <input
+                        type="text"
+                        id="firstname"
+                        name="firstname"
+                        required
+                        >
+
+                        <span class="error" id="firstname-error"></span>
+                    </div>
+
+
+                      <div class="form-group">
+                        <label for="lastname">Last Name</label>
+
+                        <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        required
+                        >
+
+                        <span class="error" id="lastname-error"></span>
+                    </div>
+
+
+                      <div class="form-group">
+                        <label for="address">Street Address</label>
+
+                        <input
+                        type="text"
+                        id="address"
+                        name="address"
+                        required
+                        >
+
+                        <span class="error" id="address-error"></span>
+                    
+                    </div>
+
+
+                      <div class="form-row">
+
+                        <div class="form-group">
+
+                        <label for="city">City</label>
+
+                        <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        required
+                        >
+
+                        <span class="error" id="city-error"></span>
+                    </div>
+                    
+
+                      <div class="form-group">
+                        <label for="state">State</label>
+
+                       <select id="state" name="state" required>
+                        <option value="">Select State</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Gerogia</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="SC">South Carolina</option>
+
+                       </select>
+
+                        <span class="error" id="state-error"></span>
+                    </div>
+
+
+                       <div class="form-group">
+
+                        <label for="zip">Zip</label>
+
+                        <input
+                        type="text"
+                        id="zip"
+                        name="zip"
+                        required
+                        >
+
+                        <span class="error" id="zip-error"></span>
+                    </div>
+
+                      </div>
+
+
+                <!--Phone-->
+
+                   <div class="form-group">
+
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="(000)000-0000"
+                        maxlength="13"
+                        required
+                        >
+
+                        <span class="error" id="phone-error"></span>
+
+
+                    </div>
+
+                    <!--EMAIL-->
+
+                       <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        >
+
+                        <span class="error" id="email-error"></span>
+                    
+                    </div>
+
+                    <!--Birth Date-->
+
+                       <div class="form-group">
+
+                        <label for="birthdate">Birth Date</label>
+
+                        <input
+                        type="date"
+                        id="birthdate"
+                        name="birthdate"
+                        required
+                        >
+
+                        <span class="error" id="birthdate-error"></span>
+                    </div>
+
+
+                    <!--Message-->
+
+                       <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                        ></textarea>
+
+                        <span class="error" id="message-error"></span>
+                    
+                    </div>
+
+                    <!--Security Question-->
+
+                       <div class="form-group">
+
+                        <label for="conform">
+                            Security Check: What is 4 + 3?
+                        </label>
+
+                        <input
+                        type="number"
+                        id="conform"
+                        name="conform"
+                        required
+                        >
+
+                        <span class="error" id="conform-error"></span>
+
+
+                    </div>
+
+
+                    <button type="submit" class="form-button">
+                        Review Information
+                    </button>
+
+
+                </form>
+
+
+            </section>
+
+
+        </main>
+
+
+         <footer>
+            <p> &copy; 2026 Zer0X</p>
+            <p>Built with HTML, CSS, & Javascript</p>
+        </footer>
+
+        <script scr="js/form.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

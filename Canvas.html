@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Spirograph</title>
+
+    <nav>
+        <div>
+            <a href="Assignments.html">Back to Assignments</a>
+        </div>
+    </nav>
+
+
+    <link rel="stylesheet" href="css/stylec.css">
+
+
+</head>
+
+
+       <body>
+
+        <h1>Spirograph</h1>
+
+        <p>
+            Enter values for R, r, and O, then click the 
+            button to draw the Spriograph.
+        </p>
+
+        <div class="controls"> 
+
+            <label for="R">
+                Outer Radius R (50 - 150):
+            </label>
+            <input type="number" id="R" min="50" max="150" value="100">
+
+            <label for="r">
+                Inner Radius r (10 - 75):
+            </label>
+            <input type="number" id="r" min="10" max="75" value="40">
+
+            <label for="O">
+                Pen Offset O (0 - 75):
+            </label>
+            <input type="number" id="O" min="0" max="75" value="30">
+
+            <button id="startButton">Start Spirograph</button>
+
+        </div>
+
+        <p id="error"></p>
+
+        <canvas id="spiroCanvas" width="600" height="600"></canvas>
+
+        <script src="js/spirograph.js"></script>
+
+       </body>
+ 
+
+
+
+</html>

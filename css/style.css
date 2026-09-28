@@ -341,5 +341,35 @@ footer {
 }
 
 
+/*---Canvas Setup--*/ 
+
+.controls {
+    margin: 20px;
+}
+
+label {
+    margin-left: 10px;
+}
+
+input {
+    width: 70px;
+    padding: 5px;
+}
+
+button {
+    margin-left: 15px;
+    padding: 7px 15px;
+    cursor:pointer;
+}
+
+#error {
+    color: red;
+}
+
+canvas {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
 
 
