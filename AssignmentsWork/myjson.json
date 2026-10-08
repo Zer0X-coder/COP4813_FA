@@ -1,0 +1,31 @@
+{
+    "games":[
+        {
+        "title": "Fire Emblem: Fourtune's Weave",
+        "genre": "tactical RPG, turn-based strategy",
+        "developer": "Nintendo",
+        "releaseYear": 2026,
+        "platform": "Nintendo Switch"
+
+        },
+
+        {
+        "title": "TimeSplitters Future Perfect",
+        "genre": "FPS",
+        "developer": "Free Radical Design",
+        "releaseYear": 2005,
+        "platform": "Playstation 2, Nintendo GameCube, Xbox"
+
+        },
+
+         {
+        "title": "Well Dweller",
+        "genre": "Metroidvania, action-adventure, indie, RPG",
+        "developer": "Kyle Thompson",
+        "releaseYear": 2026,
+        "platform": "PC, Nintendo Switch, Nintendo Switch 2, PlayStation 5, Xbox Series X/S"
+
+        }
+
+    ]
+}
