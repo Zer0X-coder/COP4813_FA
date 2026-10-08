@@ -24,3 +24,5 @@ fetch("myjson.json")
 .catch(error => {
     console.error("Error loading JSON", error);
 })
+
+loadGame-Data();
