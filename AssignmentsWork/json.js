@@ -25,4 +25,4 @@ fetch("myjson.json")
     console.error("Error loading JSON", error);
 })
 
-loadGame-Data();
+loadMyjson();
