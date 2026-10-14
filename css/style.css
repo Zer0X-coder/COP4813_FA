@@ -371,5 +371,34 @@ canvas {
     margin-top: 20px;
 }
 
+/* Video Game Database  */
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e6e6e6;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+
 
 
