@@ -19,13 +19,13 @@ fetch("myjson.json")
         const row = document.createElement("tr");
 
         //Add the information
-        row.innerHTML = '
-            <td>$(game.title) </td> 
-            <td>$(game.genre) </td>
-            <td>$(game.developer) </td>
-            <td>$(game.releaseYear) </td>
-            <td>$(game.platform) </td>
-        ';
+        row.innerHTML = `
+            <td>${game.title} </td> 
+            <td>${game.genre} </td>
+            <td>${game.developer} </td>
+            <td>${game.releaseYear} </td>
+            <td>${game.platform} </td>
+        `;
 
         // Add row to table
         table.appendChild(row);
