@@ -10,7 +10,7 @@ fetch("myjson.json")
 .then(data => {
 
     // find table body in HTML
-    const table = document.getElementById("game-data");
+    const table = document.getElementById("games-data");
 
     // loop through each game in JSON file
     data.games.forEach(game => {
