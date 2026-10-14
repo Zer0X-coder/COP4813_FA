@@ -20,11 +20,11 @@ fetch("myjson.json")
 
         //Add the information
         row.innerHTML = '
-            <td>$(game.title)</td> 
-            <td>$(game.genre)</td>
-            <td>$(game.developer)</td>
-            <td>$(game.releaseYear)</td>
-            <td>$(game.platform)</td>
+            <td>$(game.title) </td> 
+            <td>$(game.genre) </td>
+            <td>$(game.developer) </td>
+            <td>$(game.releaseYear) </td>
+            <td>$(game.platform) </td>
         ';
 
         // Add row to table
