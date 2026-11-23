@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Breaker: Enter the Matrix</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+
+        <!--Digital Rain background-->
+
+        <canvas id="matrix-rain"></canvas>
+
+        <main class="game-container">
+            <h1>Code Breaker: Enter the Matrix</h1>
+            <h2>Math Mode</h2>
+
+            <!--Digital Lock-->
+            <div id="security-lock" class="lock-container">
+
+                <div class="lock-shackle"></div>
+
+                <div class="lock-body">
+                    <span class="lock-symbol">&#9679;</span>
+                </div>
+
+                <p id="lock-status">SYSTEM LOCKED</p>
+
+            </div>
+
+
+            <section id="instructions">
+                <h3>How To Play</h3>
+                <p>Solve four math challenges to discover
+                    the secret four-digit vault code.</p>
+                    <p>Each correct answer revels one digit</p>
+                    <p>Once you dicover all four digits,
+                        enter the code to unlock the vault and enter the matrix!</p>
+
+                        <button id="start-btn">Start Game</button>
+            </section>
+
+            <section id="game-area" hidden>
+                <h3>Vault Code</h3>
+                <div id="vault-code">? ? ? ?</div>
+
+                <p id="progress">Challenge 1 of 4</p>
+                <h2 id="question"></h2>
+
+                <input type="number" id="answer"
+                min="0" max="9"
+                placeholder="Your answer">
+
+                <button id="submit-btn">Submit Answer</button>
+
+                <p id="feedback"></p>
+                <p>Score: <span id="score">100</span></p>
+                <p>Mistakes: <span id="mistakes">0</span></p>
+            </section>
+
+            <section id="vault-area" hidden>
+                <h2>Enter the Secret Code</h2>
+
+
+                <input type="text" id="code-input"
+                maxlength="4" inputmode="numeric"
+                placeholder="4-digit code">
+
+
+
+                <button id="unlock-btn">Unlock Vault</button>
+                <p id="vault-message"></p>
+                <button id="restart-btn" hidden>Play Again</button>
+            </section>
+        </main>
+</body>
+</html>
